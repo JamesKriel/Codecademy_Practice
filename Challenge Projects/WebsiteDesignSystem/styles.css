@@ -1,0 +1,172 @@
+*{
+    margin: 1px 1px;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('./resources/Barlow/Barlow-Black.ttf') format('truetype'),
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./resources/Roboto/Roboto-Black.ttf') format('truetype'),
+  }
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('./resources/Kanit/Kanit-Black.ttf') format('truetype'),
+  }
+
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./resources/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header h1{
+    font-size: 50px;
+    color: darkorchid;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.concept-section{
+    border-top: 2px solid rgb(226, 135, 135);
+    border-bottom: 2px solid rgb(226, 135, 135);
+    margin-bottom: 15px;
+    padding: 30px;
+}
+
+.colorExample{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    min-height: 100px;
+    width: 32%;
+    margin-right: 10px;
+}
+
+.lightblue{
+    background-color: lightblue;
+    color: white;
+}
+
+.maroon{
+    background-color: maroon;
+    color: white;
+}
+
+.salmon{
+    background-color: salmon;
+    color: white;
+}
+
+.midnightblue{
+    background-color: midnightblue;
+    color: white;
+}
+
+.color-Label{
+    margin-top: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.hex-Label{
+    margin-top: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+.font-example{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    min-height: 100px;
+    width: 40%;
+    margin-right: 10px;
+}
+
+.font-label{
+    font-size: 20px;
+    position: relative;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.font-item{
+    word-spacing: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.normal-font{
+    font-weight: normal;
+    font-style: normal;
+}
+
+.italic-font{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.bold-font{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.roboto{
+    font-family: Roboto, sans-serif;
+}
+
+.kanit{
+    font-family: Kanit, sans-serif;
+}
+
+barlow{
+    font-family: Barlow, sans-serif;
+}
+
+.text-example{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    min-height: 100px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+p{
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: barlow;
+}
+

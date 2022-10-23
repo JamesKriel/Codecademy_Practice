@@ -1,0 +1,183 @@
+*{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+
+.header{
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header img{
+    height: 50px;
+    margin: 10px;
+}
+
+.header ul{
+    text-align: center;
+    float: right;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.header li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.section-mission{
+    position: relative;
+    top: 70px;
+    height: 700px;
+    width: 1200px;
+    background-image: url("./resources/img-mission-background.jpg");
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mission-statement{
+    width: 1200px;
+    opacity: 1;
+    text-align: center;
+}
+
+h2{
+    margin: 10px auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3{
+    margin: 10px auto;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h4{
+    margin: 10px auto;
+    font-size: 24px;
+}
+
+.tea-of-the-month{
+    width: 1000px;
+    top: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px auto;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.tea-of-the-month h2{
+    width: 100%;
+}
+
+.tea-of-the-month p{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.totm-square{
+    height: 240px;
+    width: 300px;
+    padding-bottom: 15px;
+}
+
+.totm-image{
+    height: 200px;
+    width: 300px;
+}
+
+#fall-berry{
+    background-image: url("./resources/img-berryblitz.jpg");
+}
+
+#spiced-rum{
+    background-image: url("./resources/img-spiced-rum.jpg");
+}
+
+#donut{
+    background-image: url("./resources/img-donut.jpg");
+}
+
+#myrtle{
+    background-image: url("./resources/img-myrtle-ave.jpg");
+}
+
+#bedford{
+    background-image: url("./resources/img-bedford-bizarre.jpg");
+}
+
+.section-locations{
+    position: relative;
+    top: 140px;
+    height: 500px;
+    width: 1200px;
+    background-image: url("./resources/img-locations-background.jpg");
+    margin: 30px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 90px 50px 90px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.location-square{
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.location-square p{
+    margin-top: 40px;
+}
+
+.location-square h3{
+    margin-top: 25px;
+}
+
+.location-square+.location-square{
+    margin-left: 40px;
+}
+
+.section-locations h2{
+    color: white;
+    margin-bottom: 15px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.section-contact
+{
+    position: relative;
+    top: 110px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+h5{
+    margin-top: 20px;
+}
+
+footer{
+    position: relative;
+    top: 150px;
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}

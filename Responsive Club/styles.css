@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #FF6B6B;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Black.ttf') format('truetype');
+  }
+
+.image-container {
+    overflow: hidden;
+  }
+  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Roboto';
+}
+
+
+/* Header Section */
+
+header{
+    position: relative;
+    height: 6.25rem;
+    background-color: orange;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+header ul{
+    margin-top: 1.2%;
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+    padding-right: 3rem;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Content Sections */
+
+.main {
+    position: relative;
+    text-align: center;
+    background-color: #FF6B6B;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.intro{
+    margin-top: 2rem;
+    background-color: black;
+    padding: 1rem;
+    width: 100%;
+}
+
+.intro h2{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: wavy;
+    color: white;
+}
+
+.intro p{
+    color: white;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+
+.pictures{
+    position: relative;
+    display: flex;
+    width: 86%;
+    margin-top: 4rem;
+}
+
+.pictures .content{
+    float: left;
+    width: 20%;
+    line-height: 4rem;
+}
+
+.gallery{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.gallery .image-container{
+    width: 24rem;
+    height: 13rem;
+    margin: 1rem;
+    border: 1rem solid white;
+}
+
+.pictures p{
+    font-size: 2.5rem;
+    font-family: "Roboto";
+}
+
+.pictures ol{
+    margin-top: 2rem;
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+}
+
+#andMore{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1469px){
+    .pictures .content{
+        width: 40%;
+        padding-top: 30%;
+    }
+
+    .pictures .gallery{
+        width: 60%;
+    }
+}
