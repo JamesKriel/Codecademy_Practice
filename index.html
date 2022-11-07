@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./Resources/styles.css'>
+    <title>Document</title>
+    <script src="./Resources/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <header>
+        <p>Portfolio</p>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects-id">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-me-grid" id="about-me">
+        <section class="about-me-text">
+            <h1>James Kriel</h1>
+            <p>
+                I am a full stack engineer based in Cape Town, South Africa. When I'm not spending my time learning new skills on Codecademy or making progress
+                in my real world job, I like to play videogames and read fantasy novels.
+            </p>
+        </section>
+        <section class="about-me-img">
+            <img src="./Resources/Images/deadpool-heart.jpg">
+        </section>
+    </section>
+
+    <section class="projects-area" id="projects-id">
+        <h2>My Projects</h2>
+        <div class="flex-center" id="left">
+            <button class="button" role="button" id="prevBtn" disabled>Previous</button>
+        </div>
+        <div class="project" id="p1">
+            <div class="project-img-container">
+                <img src="./Resources/Images/project1.jpg">
+            </div>
+            <h2>Project 1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Rem optio eos itaque expedita, provident atque dolor enim explicabo amet magni, dignissimos consequatur? 
+                Illum autem odit dolorem similique, iure blanditiis officia.
+            </p>
+        </div>
+        <div class="project" id="p2" style="display: none;">
+            <div class="project-img-container">
+                <img src="./Resources/Images/project2.png">
+            </div>
+            <h2>Project 2</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Rem optio eos itaque expedita, provident atque dolor enim explicabo amet magni, dignissimos consequatur? 
+                Illum autem odit dolorem similique, iure blanditiis officia.
+            </p>
+        </div>
+        <div class="project" id="p3" style="display: none;">
+            <div class="project-img-container">
+                <img src="./Resources/Images/project3.jpg">
+            </div>
+            <h2>Project 3</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Rem optio eos itaque expedita, provident atque dolor enim explicabo amet magni, dignissimos consequatur? 
+                Illum autem odit dolorem similique, iure blanditiis officia.
+            </p>
+        </div>
+        <div class="project" id="p4" style="display: none;">
+            <div class="project-img-container">
+                <img src="./Resources/Images/project4.png">
+            </div>
+            <h2>Project 4</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Rem optio eos itaque expedita, provident atque dolor enim explicabo amet magni, dignissimos consequatur? 
+                Illum autem odit dolorem similique, iure blanditiis officia.
+            </p>
+        </div>
+        <div class="flex-center" id="right">
+            <button class="button" role="button" id="nextBtn">Next</button>
+        </div>
+    </section>
+
+    <section class="skills-area" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-img-container">
+            <img src="./Resources/Images/java.jpg">
+        </div>
+        <div class="skills-img-container">
+            <img src="./Resources/Images/js.png">
+        </div>
+        <div class="skills-img-container">
+            <img src="./Resources/Images/sql.png">
+        </div>
+        <div class="skills-img-container">
+            <img src="./Resources/Images/css.png">
+        </div>
+    </section>
+
+    <section class="contact-area" id="contact">
+        <h2>Contact Me</h2>
+        <h3>Email: jameskriel2010@gmail.com</h3>
+        <h3>Cellphone: 0611994637</h3>
+        <h3><a href="https://www.linkedin.com/in/james-kriel-118b98191/" target="_blank">LinkedIn</a></h3>
+    </section>
+    
+
+    <script>
+        let projects = document.querySelectorAll('.project');
+        let next = document.getElementById("nextBtn");
+        let prev = document.getElementById("prevBtn");
+
+        function nextProject(){
+            let chosenProj = '';
+            projects.forEach(element => {
+                if(element.style.display !== 'none')
+                {
+                    chosenProj = element.id;
+                }
+            });
+            switch(chosenProj){
+                case 'p1':
+                    prev.disabled = false;
+                    $('#p1').hide();
+                    $('#p2').show();
+                    break;
+
+                case 'p2':
+                    $('#p2').hide();
+                    $('#p3').show();
+                    break;
+
+                case 'p3':
+                    $('#p3').hide();
+                    $('#p4').show();
+                    next.disabled = true;
+                    break;
+            }
+        }
+
+        function prevProject(){
+            let chosenProj = '';
+            projects.forEach(element => {
+                if(element.style.display !== 'none')
+                {
+                    chosenProj = element.id;
+                }
+            });
+            switch(chosenProj){
+                case 'p2':
+                    prev.disabled = true;
+                    $('#p1').show();
+                    $('#p2').hide();
+                    break;
+
+                case 'p3':
+                    $('#p2').show();
+                    $('#p3').hide();
+                    break;
+
+                case 'p4':
+                    $('#p3').show();
+                    $('#p4').hide();
+                    next.disabled = false;
+                    break;
+            }
+        }
+
+        next.onclick = nextProject;
+        prev.onclick = prevProject;
+    </script>
+</body>
+</html>
