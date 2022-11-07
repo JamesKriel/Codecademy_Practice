@@ -159,7 +159,6 @@ nav li{
 .project-img-container{
     width: 350px;
     margin-bottom: 2rem;
-
 }
 
 
@@ -200,4 +199,45 @@ nav li{
 
 .button:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* Skills area */
+.skills-area{
+    grid-area: 11 / 2 / span 3 / span 6;
+    background-color: magenta;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.skills-area h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    width: 100%;
+    margin-bottom: 2rem;
+    height: auto;
+}
+
+.skills-img-container{
+    width: 110px;
+}
+
+/* Contact area */
+.contact-area{
+    grid-area: 14 / 2 / span 2 / span 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-area h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    width: 100%;
+    margin-bottom: 2rem;
+    height: auto;
 }
